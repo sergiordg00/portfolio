@@ -1,12 +1,33 @@
+import Experience from "./components/Experience";
 import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 export default function App() {
   return (
     <div className="w-full">
-      <Home/>
+      <Navbar/>
       
       <main className="mx-auto w-full max-w-[1140px] px-5 pb-10">
-        {/* TODO */}
+        <Home/>
+
+        <Experience/>
+
+        <Projects/>
+
+        <Skills/>
+
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
+        <div className="h-96"></div>
       </main>
     </div>
   );

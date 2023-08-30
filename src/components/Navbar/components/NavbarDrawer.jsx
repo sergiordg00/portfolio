@@ -24,7 +24,7 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
 
         <NavItem 
           icon={<MdPerson size={20} />}
-          text="Experiencia"
+          text="Trayectoria"
           href="#experience" 
           onClick={() => setIsDrawerOpen(false)} 
         />
@@ -53,7 +53,7 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
       <div className="flex items-center gap-x-5">
         <SocialButton
           icon={<FiGithub size={20} />}
-          href="https://google.com"
+          href="https://github.com/sergiordg00"
           secondary
         />
 

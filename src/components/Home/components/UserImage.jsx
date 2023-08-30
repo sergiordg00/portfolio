@@ -6,7 +6,7 @@ export default function UserImage() {
       <img 
         src={sergio}
         alt="Sergio's profile" 
-        className="relative z-[2] h-full w-full rounded-lg object-cover object-center"
+        className="relative z-[2] h-full w-full rounded-lg bg-gray-600 object-cover object-center"
       />
 
       <div className="absolute left-3 top-3 h-full w-full rounded-lg border border-solid border-primary sm:left-5 sm:top-5"/>

@@ -14,7 +14,7 @@ export default function Navbar() {
   const screenSize = useScreenSize();
 
   return (
-    <nav className="navbar-shadow sticky top-0 z-[3] w-full shrink-0 bg-background py-4">
+    <nav className="navbar-shadow fixed top-0 z-[3] w-full shrink-0 bg-background py-4">
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-5">
         <a href="#" className="shrink-0 transition hover:opacity-50">
           <img 
@@ -49,7 +49,7 @@ export default function Navbar() {
               />
 
               <NavItem 
-                text="Experiencia"
+                text="Trayectoria"
                 href="#experience" 
                 onClick={() => setIsDrawerOpen(false)} 
               />
