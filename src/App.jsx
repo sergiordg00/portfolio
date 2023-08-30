@@ -17,17 +17,6 @@ export default function App() {
         <Projects/>
 
         <Skills/>
-
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
-        <div className="h-96"></div>
       </main>
     </div>
   );
