@@ -1,10 +1,10 @@
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { MdOutlineFileDownload } from "react-icons/md";
 
+import ButtonLink from "@/components/buttons/ButtonLink";
 import SocialButton from "@/components/buttons/SocialButton";
 
-import ButtonLink from "../buttons/ButtonLink";
-
+import UserImage from "./components/UserImage";
 import Navbar from "./Navbar";
 
 export default function Home() {
@@ -13,8 +13,8 @@ export default function Home() {
       <Navbar />
 
       <div className="flex w-full grow items-center justify-center py-10">
-        <div className="flex w-full max-w-[1140px] items-center gap-x-7 px-5">
-          <div className="flex w-full flex-col items-start gap-y-4 lg:gap-y-8">
+        <div className="flex w-full max-w-[1140px] flex-col items-center gap-12 px-5 min-[710px]:flex-row">
+          <div className="order-2 flex w-full flex-col items-center gap-y-4 min-[710px]:items-start lg:gap-y-8">
             <h3 className="font-title text-lg tracking-wide text-primary">
               ¡Hola 👋!, me llamo
             </h3>
@@ -27,11 +27,22 @@ export default function Home() {
               Frontend Developer
             </h2>
 
-            <p className="w-full text-base font-medium text-dark" style={{ textWrap: "balance" }}>
-              Con más de dos años de experiencia, he tenido la oportunidad de explorar 
+            <p className="w-full text-center text-base font-medium text-dark min-[710px]:text-start" style={{ textWrap: "balance" }}>
+              Con más de 
+              
+              <span className="font-semibold text-primary">
+                {" "}dos años{" "}
+              </span>
+
+              de experiencia, he tenido la oportunidad de explorar 
               y mejorar mis habilidades en la creación de interfaces de usuario. 
-              Mi trayectoria profesional ha estado especialmente guiada por React, 
-              donde he invertido más de año y medio perfeccionando mis habilidades 
+              Mi trayectoria profesional ha estado especialmente guiada por
+
+              <span className="font-semibold text-primary">
+                {" "}React
+              </span>
+
+              , donde he invertido más de año y medio perfeccionando mis habilidades 
               con esta potente librería.
             </p>
 
@@ -58,8 +69,7 @@ export default function Home() {
             </div>
           </div>
 
-          Here we will have an image with shrink-0
-          
+          <UserImage />
         </div>
       </div>
     </section>
