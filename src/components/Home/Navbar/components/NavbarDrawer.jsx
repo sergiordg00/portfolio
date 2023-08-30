@@ -2,9 +2,9 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { MdCode, MdHome, MdOutlineFileDownload, MdPerson, MdWork } from "react-icons/md";
 
 import ButtonLink from '@/components/buttons/ButtonLink';
+import SocialButton from "@/components/buttons/SocialButton";
 import Drawer from "@/components/modals/Drawer";
 
-import NavButton from "./NavButton";
 import NavItem from "./NavItem";
 
 export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
@@ -51,14 +51,16 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
       />
 
       <div className="flex items-center gap-x-5">
-        <NavButton
+        <SocialButton
           icon={<FiGithub size={20} />}
           href="https://google.com"
+          secondary
         />
 
-        <NavButton
+        <SocialButton
           icon={<FiLinkedin size={20} />}
           href="https://google.com"
+          secondary
         />
       </div>
     </Drawer>
