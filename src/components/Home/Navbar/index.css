@@ -1,0 +1,7 @@
+.navbar-shadow {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+}
+
+.hamburger-react {
+  z-index: 52;
+}
