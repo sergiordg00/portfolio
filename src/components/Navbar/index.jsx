@@ -1,5 +1,6 @@
 import Hamburger from 'hamburger-react';
 import { useState } from "react";
+import { MdCode, MdHome, MdPerson, MdWork } from "react-icons/md";
 
 import logo from "@/assets/img/logo.png";
 import useScreenSize from "@/hooks/useScreenSize";
@@ -43,24 +44,28 @@ export default function Navbar() {
             :
             <ul className="flex items-center gap-x-7">
               <NavItem 
+                icon={<MdHome size={20} />}
                 text="Home"
                 href="#" 
                 onClick={() => setIsDrawerOpen(false)} 
               />
 
               <NavItem 
+                icon={<MdPerson size={20} />}
                 text="Trayectoria"
                 href="#experience" 
                 onClick={() => setIsDrawerOpen(false)} 
               />
 
               <NavItem 
+                icon={<MdCode size={20} />}
                 text="Proyectos"
                 href="#projects" 
                 onClick={() => setIsDrawerOpen(false)} 
               />
 
               <NavItem 
+                icon={<MdWork size={20} />}
                 text="Habilidades"
                 href="#skills" 
                 onClick={() => setIsDrawerOpen(false)} 
