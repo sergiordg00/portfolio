@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-export default function DesktopItem({ icon, text, href, onClick }) {
+export default function NavItem({ icon, text, href, onClick }) {
   return (
     <li>
       <a 

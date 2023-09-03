@@ -24,22 +24,22 @@ export default function Home() {
           </h2>
 
           <p className="w-full text-center text-base font-medium text-dark min-[710px]:text-start" style={{ textWrap: "balance" }}>
-              Con más de 
+            Con más de 
               
             <span className="font-semibold text-primary">
               {" "}dos años{" "}
             </span>
 
-              de experiencia, he tenido la oportunidad de explorar 
-              y mejorar mis habilidades en la creación de interfaces de usuario. 
-              Mi trayectoria profesional ha estado especialmente guiada por
+            de experiencia, he tenido la oportunidad de explorar 
+            y mejorar mis habilidades en la creación de interfaces de usuario. 
+            Mi trayectoria profesional ha estado especialmente guiada por
 
             <span className="font-semibold text-primary">
               {" "}React
             </span>
 
-              , donde he invertido más de año y medio perfeccionando mis habilidades 
-              con esta potente librería.
+            , donde he invertido más de año y medio perfeccionando mis habilidades 
+            con esta potente librería.
           </p>
 
           <div className="mt-2 flex items-center gap-x-8 sm:gap-x-12 lg:mt-0">
