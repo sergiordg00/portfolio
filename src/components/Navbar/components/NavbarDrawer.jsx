@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { MdCode, MdHome, MdOutlineFileDownload, MdPerson, MdWork } from "react-icons/md";
 
@@ -20,6 +21,8 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
           text="Home"
           href="#" 
           onClick={() => setIsDrawerOpen(false)} 
+          delay={0}
+          isDrawer
         />
 
         <NavItem 
@@ -27,6 +30,8 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
           text="Trayectoria"
           href="#experience" 
           onClick={() => setIsDrawerOpen(false)} 
+          delay={0.1}
+          isDrawer
         />
 
         <NavItem 
@@ -34,6 +39,8 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
           text="Proyectos"
           href="#projects" 
           onClick={() => setIsDrawerOpen(false)} 
+          delay={0.2}
+          isDrawer
         />
 
         <NavItem 
@@ -41,27 +48,47 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
           text="Habilidades"
           href="#skills" 
           onClick={() => setIsDrawerOpen(false)} 
+          delay={0.3}
+          isDrawer
         />
       </ul>
 
-      <ButtonLink 
-        icon={<MdOutlineFileDownload size={24} />}
-        text="Descargar CV" 
-        href="https://google.com" 
-      />
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.9 }}
+      >
+        <ButtonLink 
+          icon={<MdOutlineFileDownload size={24} />}
+          text="Descargar CV" 
+          href="https://google.com" 
+        />
+      </motion.div>
 
       <div className="flex items-center gap-x-5">
-        <SocialButton
-          icon={<FiGithub size={20} />}
-          href="https://github.com/sergiordg00"
-          secondary
-        />
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+        >
+          <SocialButton
+            icon={<FiGithub size={20} />}
+            href="https://github.com/sergiordg00"
+            secondary
+          />
+        </motion.div>
 
-        <SocialButton
-          icon={<FiLinkedin size={20} />}
-          href="https://google.com"
-          secondary
-        />
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.1 }}
+        >
+          <SocialButton
+            icon={<FiLinkedin size={20} />}
+            href="https://google.com"
+            secondary
+          />
+        </motion.div>
       </div>
     </Drawer>
   );

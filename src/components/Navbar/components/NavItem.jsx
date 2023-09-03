@@ -1,8 +1,13 @@
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
-export default function NavItem({ icon, text, href, onClick }) {
+export default function NavItem({ icon, text, href, onClick, isDrawer=false, delay }) {
   return (
-    <li>
+    <motion.li
+      initial={isDrawer ? { opacity: 0, x: 10 } : { opacity: 0, y: -10 }}
+      animate={isDrawer ? { opacity: 1, x: 0 } : { opacity: 1, y: 0 }}
+      transition={{ delay: isDrawer ? delay+0.5 : delay }}
+    >
       <a 
         href={href} 
         onClick={onClick}
@@ -20,6 +25,6 @@ export default function NavItem({ icon, text, href, onClick }) {
           "transition-transform duration-300 group-hover:origin-left group-hover:scale-x-100"
         )}/>
       </a>
-    </li>
+    </motion.li>
   );
 }

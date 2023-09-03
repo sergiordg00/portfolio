@@ -1,4 +1,4 @@
-// import CursorEffect from "./components/common/CursorEffect";
+import CursorEffect from "./components/common/CursorEffect";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 export default function App() {
   return (
     <div className="w-full">
-      {/* <CursorEffect/> */}
+      <CursorEffect/>
       
       <Navbar/>
       

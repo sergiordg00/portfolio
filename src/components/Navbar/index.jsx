@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Hamburger from 'hamburger-react';
 import { useState } from "react";
 import { MdCode, MdHome, MdPerson, MdWork } from "react-icons/md";
@@ -17,24 +18,36 @@ export default function Navbar() {
   return (
     <nav className="navbar-shadow fixed top-0 z-[3] w-full shrink-0 bg-background py-4">
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-5">
-        <a href="#" className="shrink-0 transition hover:opacity-50">
+        <motion.a 
+          href="#" 
+          className="shrink-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          whileHover={{ opacity: 0.5 }}
+        >
           <img 
             src={logo} 
             alt="Sergio's Logo" 
             className="w-[50px]" 
           />
-        </a>
+        </motion.a>
 
         {
           screenSize.width <= 600 ? 
             <>
-              <Hamburger
-                toggled={isDrawerOpen}
-                toggle={setIsDrawerOpen}
-                size={24}
-                color="#64ffda"
-                duration={0.5}
-              />
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.3 }}
+              >
+                <Hamburger
+                  toggled={isDrawerOpen}
+                  toggle={setIsDrawerOpen}
+                  size={24}
+                  color="#64ffda"
+                  duration={0.5}
+                />
+              </motion.div>
 
               <NavbarDrawer
                 isDrawerOpen={isDrawerOpen}
@@ -47,7 +60,8 @@ export default function Navbar() {
                 icon={<MdHome size={20} />}
                 text="Home"
                 href="#" 
-                onClick={() => setIsDrawerOpen(false)} 
+                onClick={() => setIsDrawerOpen(false)}
+                delay={0.1} 
               />
 
               <NavItem 
@@ -55,6 +69,7 @@ export default function Navbar() {
                 text="Trayectoria"
                 href="#experience" 
                 onClick={() => setIsDrawerOpen(false)} 
+                delay={0.2}
               />
 
               <NavItem 
@@ -62,6 +77,7 @@ export default function Navbar() {
                 text="Proyectos"
                 href="#projects" 
                 onClick={() => setIsDrawerOpen(false)} 
+                delay={0.3}
               />
 
               <NavItem 
@@ -69,6 +85,7 @@ export default function Navbar() {
                 text="Habilidades"
                 href="#skills" 
                 onClick={() => setIsDrawerOpen(false)} 
+                delay={0.4}
               />
             </ul>
         }
