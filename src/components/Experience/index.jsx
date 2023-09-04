@@ -40,7 +40,7 @@ export default function Experience() {
           </h3>
 
           <Timeline
-            timePeriod="Febrero 2022 - Agosto 2023"
+            timePeriod="Feb 2022 - Ago 2023"
             location="Suarte"
             title="Lead Frontend Developer"
             isLast
@@ -58,19 +58,8 @@ export default function Experience() {
               </TimelineParagraph>
 
               <TimelineItem>
-                Desempeñé un papel fundamental en la construcción
-                de la <span className="font-semibold text-primary">arquitectura</span> inicial del frontend.
-              </TimelineItem>
-
-              <TimelineItem>
-                Trabajé en estrecha colaboración con el equipo
-                de diseño y de backend para asegurar una
-                integración perfecta de los servicios.
-              </TimelineItem>
-
-              <TimelineItem>
                 Diseñe y desarrollé un <span className="font-semibold text-primary">sistema de caché</span> desde 0
-                sobre redux, una solución que resultó ser crucial
+                sobre Redux, una solución que resultó ser crucial
                 para reducir drásticamente las solicitudes del
                 cliente y mejorar los costes, la eficiencia y
                 velocidad de la plataforma.
@@ -79,14 +68,32 @@ export default function Experience() {
               <TimelineItem>
                 Solucioné problemas de renderizado que surgieron
                 durante el desarrollo empleando técnicas
-                de <span className="font-semibold text-primary">virtualización</span>.
+                de <span className="font-semibold text-primary">virtualización</span>,
+                logrando pasar de máximo <span className="font-semibold text-primary">80-100</span> elementos 
+                en pantalla a <span className="font-semibold text-primary">+50000</span> sin pérdidas de rendimiento 
+                incluso en dispositivos de gama baja.
               </TimelineItem>
 
               <TimelineItem>
-                Además de los puntos mencionados, colaboré en una
-                variedad de otras áreas, desde la implementación
-                de características clave hasta la mejora continua
-                de la interfaz de usuario.
+                Elaboré una gran variedad de <span className="font-semibold text-primary">herramientas internas</span> para 
+                gestionar tanto el contenido como los procesos internos de la plataforma: gestión de emails, solicitudes de contacto, registro de clientes, revisión de cuadros, etc.
+              </TimelineItem>
+
+              <TimelineItem>
+                Desempeñé un papel fundamental en la construcción
+                de la <span className="font-semibold text-primary">arquitectura</span> inicial del frontend.
+              </TimelineItem>
+
+              <TimelineItem>
+                Mejoré el DX considerablemente migrando el build de la plataforma a <span className="font-semibold text-primary">Vite</span>,
+                reduciendo drásticamente los tiempos de compilado, además de configurar sistemas de <span className="font-semibold text-primary">linting</span> y <span className="font-semibold text-primary">formatting</span> para 
+                mantener un código limpio y consistente.
+              </TimelineItem>
+
+              <TimelineItem>
+                Trabajé en estrecha colaboración con el equipo
+                de <span className="font-semibold text-primary">diseño</span> y de <span className="font-semibold text-primary">backend</span> para asegurar una
+                integración perfecta de los servicios.
               </TimelineItem>
             </div>
           </Timeline>

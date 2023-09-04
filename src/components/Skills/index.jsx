@@ -80,7 +80,7 @@ export default function Skills() {
 
         <TechnologyCard
           icon={<Github className="h-auto w-8 shrink-0" />}
-          name="Github"
+          name="GitHub"
           link="https://github.com"
         />
 
