@@ -31,7 +31,7 @@ export default function Projects() {
             manera totalmente nueva con una interfaz moderna y amigable.
           `}
           technologies={["React", "Vite", "Tailwind CSS", "Deezer API", "Vercel"]}
-          href="https://reactsounds.vercel.app/"
+          href="https://reactsounds.sergiordg.com/"
           github="https://github.com/sergiordg00/reactsounds"
         />
 
@@ -46,7 +46,7 @@ export default function Projects() {
             integrada que sugiere respuestas para agilizar las conversaciones.
           `}
           technologies={["Nextjs", "Next-auth", "Prisma", "OpenAI", "Tailwind CSS", "Cloudinary", "Pusher"]}
-          href="https://bytetalk.vercel.app/"
+          href="https://bytetalk.sergiordg.com/"
           github="https://github.com/sergiordg00/bytetalk"
           inversed
         />
@@ -61,7 +61,7 @@ export default function Projects() {
             dejando comentarios y compartiendo tus ideas dentro de cada artículo.
           `}
           technologies={["Nextjs", "Sanity", "Tailwind CSS", "Vercel"]}
-          href="https://just-a-blog-three.vercel.app/"
+          href="https://blog.sergiordg.com/"
           github="https://github.com/sergiordg00/just-a-blog"
         />
 
