@@ -65,7 +65,7 @@ export default function Experience() {
                 durante el desarrollo empleando técnicas
                 de <span className="font-semibold text-primary">virtualización</span>,
                 logrando pasar de máximo <span className="font-semibold text-primary">80-100</span> elementos 
-                en pantalla a <span className="font-semibold text-primary">+50000</span> sin pérdidas de rendimiento 
+                en pantalla a <span className="font-semibold text-primary">+50,000</span> sin pérdidas de rendimiento 
                 incluso en dispositivos de gama baja.
               </TimelineItem>
 
