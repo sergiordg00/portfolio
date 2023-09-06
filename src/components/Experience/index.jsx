@@ -47,19 +47,14 @@ export default function Experience() {
           >
             <div className="flex w-full flex-col gap-y-3">
               <TimelineParagraph>
-                Suarte es una plataforma de venta de arte con características sociales 
-                en donde tuve la oportunidad de formar parte desde sus inicios.
-              </TimelineParagraph>
-
-              <TimelineParagraph>
-                Contribuí en la <span className="font-semibold text-primary">creación y desarrollo</span> completo de la plataforma.
-                Como lead frontend developer, tuve un impacto integral 
-                en varios aspectos clave:
+                Máximo responsable de la parte frontend de Suarte, 
+                desarrollada con <span className="font-semibold text-primary">React</span>, 
+                donde contribuí en la creación y desarrollo completo de la plataforma desde sus inicios.
               </TimelineParagraph>
 
               <TimelineItem>
                 Diseñe y desarrollé un <span className="font-semibold text-primary">sistema de caché</span> desde 0
-                sobre Redux, una solución que resultó ser crucial
+                sobre React Redux, una solución que resultó ser crucial
                 para reducir drásticamente las solicitudes del
                 cliente y mejorar los costes, la eficiencia y
                 velocidad de la plataforma.
@@ -75,8 +70,9 @@ export default function Experience() {
               </TimelineItem>
 
               <TimelineItem>
-                Elaboré una gran variedad de <span className="font-semibold text-primary">herramientas internas</span> para 
-                gestionar tanto el contenido como los procesos internos de la plataforma: gestión de emails, solicitudes de contacto, registro de clientes, revisión de cuadros, etc.
+                Realicé un total de <span className="font-semibold text-primary">6 proyectos</span>, que incluyeron el desarrollo 
+                de diversas herramientas internas para gestionar tanto el contenido como los procesos internos de la plataforma: 
+                gestión de emails, solicitudes de contacto, registro de clientes, revisión de cuadros, etc.
               </TimelineItem>
 
               <TimelineItem>
