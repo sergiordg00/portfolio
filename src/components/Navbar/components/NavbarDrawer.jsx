@@ -61,7 +61,7 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
         <ButtonLink 
           icon={<MdOutlineFileDownload size={24} />}
           text="Descargar CV" 
-          href="https://google.com" 
+          href="https://sergiordg.com/cv_es.pdf" 
         />
       </motion.div>
 
@@ -85,7 +85,7 @@ export default function NavbarDrawer({ isDrawerOpen, setIsDrawerOpen }) {
         >
           <SocialButton
             icon={<FiLinkedin size={20} />}
-            href="https://google.com"
+            href="https://www.linkedin.com/in/sergiordg00/"
             secondary
           />
         </motion.div>

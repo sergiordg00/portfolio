@@ -78,7 +78,7 @@ export default function Home() {
             <ButtonLink 
               icon={<MdOutlineFileDownload size={24} />}
               text="Descargar CV" 
-              href="https://google.com" 
+              href="https://sergiordg.com/cv_es.pdf"
             />
 
             <div className="flex items-center gap-x-5 sm:gap-x-7">
@@ -90,7 +90,7 @@ export default function Home() {
 
               <SocialButton
                 icon={<FiLinkedin size={20} />}
-                href="https://google.com"
+                href="https://www.linkedin.com/in/sergiordg00/"
                 primary
               />
             </div>
