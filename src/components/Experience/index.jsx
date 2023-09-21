@@ -42,7 +42,7 @@ export default function Experience() {
           <Timeline
             timePeriod="Feb 2022 - Ago 2023"
             location="Suarte"
-            title="Lead Frontend Developer"
+            title="Frontend Developer"
             isLast
           >
             <div className="flex w-full flex-col gap-y-3">
