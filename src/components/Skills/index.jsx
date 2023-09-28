@@ -1,7 +1,7 @@
 import { MdWork } from "react-icons/md";
 
 import { ReactComponent as CSS } from "@/assets/icons/css.svg";
-import { ReactComponent as Cypress } from "@/assets/icons/Cypress.svg";
+import { ReactComponent as Cypress } from "@/assets/icons/cypress.svg";
 import { ReactComponent as Figma } from "@/assets/icons/figma.svg";
 import { ReactComponent as Git } from "@/assets/icons/git.svg";
 import { ReactComponent as Github } from "@/assets/icons/github.svg";
